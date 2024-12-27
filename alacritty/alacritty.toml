@@ -1,0 +1,12 @@
+[general]
+import = [
+    "~/my-config/alacritty/themes/gruvbox_light.toml"
+]
+live_config_reload = true
+[env]
+term = "xterm-256color"
+[window]
+decorations = "None"
+startup_mode = "Fullscreen"
+[font]
+size = 20
