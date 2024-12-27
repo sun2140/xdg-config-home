@@ -53,7 +53,6 @@ sudo pacman -S --noconfirm --needed gcc make git ripgrep fd unzip neovim
 
 ### Linters
 
-| Language | Install steps                   |
-| -------- | ------------------------------- |
+| Language | Install command                  |
+| -------- | -------------------------------- |
 | markdown | `npm install -g markdownlint-cli |
-| js       | er                              |

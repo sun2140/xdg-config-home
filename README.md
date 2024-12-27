@@ -27,7 +27,7 @@ Instructions are in the specific [nvim/README.md](nvim/README.md)
 
 ### Alacritty terminal (optional)
 
-> [!INFO]
+> [!NOTE]
 > Gnome Terminal on Fedora wasn't allowing me to be full screen like this one
 
 Follow from top to bottom without skip the instructions on [Alacritty terminal repository](https://github.com/alacritty/alacritty/blob/master/INSTALL.md)
