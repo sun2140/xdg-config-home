@@ -15,4 +15,24 @@ return {
             require('lualine').setup { options = { theme = 'gruvbox' } }
         end,
     },
+    { -- Add indentation guides even on blank lines
+        'lukas-reineke/indent-blankline.nvim',
+        -- Enable `lukas-reineke/indent-blankline.nvim`
+        -- See `:help ibl`
+        main = 'ibl',
+        ---@module "ibl"
+        ---@type ibl.config,
+        opts = {
+            scope = { enabled = true, char = '▎' },
+            indent = { char = '▏' },
+        },
+    },
+    { 'folke/todo-comments.nvim', event = 'VimEnter', dependencies = { 'nvim-lua/plenary.nvim' }, opts = { signs = false } },
+    {
+        'MeanderingProgrammer/render-markdown.nvim',
+        dependencies = { 'nvim-treesitter/nvim-treesitter', 'echasnovski/mini.nvim' },
+        ---@module 'render-markdown'
+        ---@type render.md.UserConfig
+        opts = {},
+    },
 }

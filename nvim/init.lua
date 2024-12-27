@@ -1,14 +1,9 @@
 --  NOTE: Must happen before plugins are loaded (otherwise wrong leader will be used)
-vim.g.mapleader = ' '
-vim.g.maplocalleader = ' '
-vim.g.have_nerd_font = true
+require 'vim-options'
 
-require 'nvim.vim-options'
-require 'nvim.keymap'
-require 'nvim.health-check'
-
-require 'lazy-bootstrap'
-require 'lazy-plugins'
+require 'health-check'
+require 'keymap'
+require 'lazy-plugin-manager'
 
 --  NOTE: Must happen after everything to avoid undefined function being called
-require 'nvim.autocmd'
+require 'autocmd'
