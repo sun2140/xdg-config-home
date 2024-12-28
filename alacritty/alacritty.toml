@@ -10,3 +10,4 @@ decorations = "None"
 startup_mode = "Fullscreen"
 [font]
 size = 20
+normal = { family = "JetBrainsMono NF" }
