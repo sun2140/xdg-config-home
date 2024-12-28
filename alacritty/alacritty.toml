@@ -1,6 +1,6 @@
 [general]
 import = [
-    "~/my-config/alacritty/themes/tokyonight_day.toml"
+    "~/my-config/alacritty/themes/gruvbox_light.toml"
 ]
 live_config_reload = true
 [env]

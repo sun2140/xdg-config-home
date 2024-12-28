@@ -1,41 +1,18 @@
 return {
     {
-        'folke/tokyonight.nvim',
-        lazy = false,
+        'ellisonleao/gruvbox.nvim',
         priority = 1000,
-        opts = {},
+        config = function()
+            vim.o.background = 'light'
+            vim.cmd [[colorscheme gruvbox]]
+        end,
     },
     {
         'nvim-lualine/lualine.nvim',
         dependencies = { 'nvim-tree/nvim-web-devicons' },
         config = function()
-            local tokyonight_colors = require('tokyonight.colors').setup { style = 'day' }
-
-            require('lualine').setup {
-                options = {
-                    theme = {
-                        normal = {
-                            a = { bg = tokyonight_colors.blue, fg = tokyonight_colors.black },
-                            b = { bg = tokyonight_colors.bg_highlight, fg = tokyonight_colors.fg },
-                            c = { bg = tokyonight_colors.bg, fg = tokyonight_colors.fg },
-                        },
-                        insert = {
-                            a = { bg = tokyonight_colors.green, fg = tokyonight_colors.black },
-                        },
-                        visual = {
-                            a = { bg = tokyonight_colors.purple, fg = tokyonight_colors.black },
-                        },
-                        replace = {
-                            a = { bg = tokyonight_colors.red, fg = tokyonight_colors.black },
-                        },
-                        inactive = {
-                            a = { bg = tokyonight_colors.bg, fg = tokyonight_colors.gray },
-                            b = { bg = tokyonight_colors.bg, fg = tokyonight_colors.gray },
-                            c = { bg = tokyonight_colors.bg, fg = tokyonight_colors.gray },
-                        },
-                    },
-                },
-            }
+            -- NOTE: this adapt to the vim.o.background color
+            require('lualine').setup { options = { theme = 'gruvbox' } }
         end,
     },
     { -- Add indentation guides even on blank lines
