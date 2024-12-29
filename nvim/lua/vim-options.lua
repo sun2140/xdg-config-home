@@ -3,6 +3,7 @@ vim.g.maplocalleader = ' '
 vim.g.have_nerd_font = true
 
 vim.o.termguicolors = true
+vim.o.background = 'light'
 
 -- Make line numbers default
 vim.opt.number = true
@@ -35,7 +36,7 @@ vim.opt.ignorecase = true
 vim.opt.smartcase = true
 
 -- Keep signcolumn on by default
-vim.opt.signcolumn = 'yes'
+vim.opt.signcolumn = 'yes:3'
 
 -- Decrease update time
 vim.opt.updatetime = 250

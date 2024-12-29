@@ -54,6 +54,9 @@ return { -- Fuzzy Finder (files, lsp, etc)
             --   },
             -- },
             -- pickers = {}
+            defaults = {
+                borderchars = { '─', '│', '─', '│', '┌', '┐', '┘', '└' },
+            },
             extensions = {
                 ['ui-select'] = {
                     require('telescope.themes').get_dropdown(),
